@@ -27,12 +27,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (mysqli_stmt_execute($stmt)) {
             echo "<script>
             alert('Registration successful! You can now log in.');
-            window.location.href = 'register.php';
+            window.location.href = 'login.php';
             </script>";
         } else {
-            $_SESSION['error'] = 'Registration failed. Please try again.';
-            header('Location: sign-up.php');
-            exit;
+            echo "<script>
+            alert('Registration failed. Please try again.');
+            window.location.href = 'sign-up.php';
+            </script>";
         }
 
         mysqli_stmt_close($stmt);

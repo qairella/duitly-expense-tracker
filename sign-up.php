@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duitly</title>
+    <title>Duitly - Register</title>
     <link rel="stylesheet" href="">
 </head>
 <body>
@@ -16,14 +16,13 @@
     <input type="text" id="username" name="username" autocomplete="username" required><br>
 
     <label for="password">Password:</label>
-    <input type="password" id="password" name="password" autocomplete="password" placeholder="At least 8 characters"
-           minlength="8"  required><br>
+    <input type="password" id="password" name="password" autocomplete="password" placeholder="At least 8 characters" minlength="8"  required><br>
 
 
     <button type="submit">Create Account</button>
 </form>
     
-    <p>Already have an account? <a href="index.php">Sign in</a></p>
+    <p>Already have an account? <a href="login.php">Sign in</a></p>
    
 </body>
 </html>
